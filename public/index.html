@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="workshops.css" />
     <title>CSS/HTML Workshop with Drivy</title>
   </head>
   <body>
     <div id="car">
+      <!--<h1> WORKSHOPS 2 </h1>-->
+      <fieldset id="fieldset1"><legend>Cars</legend>
       <input class="model" type="text" placeholder="Car model"/>
       <input class="price-by-day" type="number" placeholder="Price by day"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
     </div>
+    <fieldset id="fieldset2"><legend>Rental</legend>
     <div id="rental">
       <input class="begin" type="date" placeholder="Rental begin date"/>
       <input class="end" type="date" placeholder="Rental end date"/>
       <input class="distance" type="number" placeholder="Distance in km"/>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
+  </fieldset>
     <button id="compute">Compute</button>
     <div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
